@@ -1,0 +1,59 @@
+
+<html>
+    <head>
+        <title>Digital Clock Project</title>
+       
+        </head>
+        <body>
+            <style type="text/css">
+            *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+    background-color: black;
+        height: 100vh;
+    }
+    #clock{
+    width: 450px;
+        height: 100px;
+        cursor: default;
+        font-family: Bahnschrift;
+        font-size: 100px;
+        font-weight: bold;
+        color: #fff;
+        margin: auto;
+        display: block;
+        margin-top: 200px;
+        text-align: center;
+        text-transform: full-width;
+    }
+    
+        
+            </style>
+            <h1>DIGITAL CLOCK DESIGN BY GYANDEEP</h1>
+            <div id="clock"></div>
+            
+            <script type="text/javascript">
+                setInterval(displayClock , 500);
+            function displayClock(){
+                var time = new Date();
+                var hrs = time.getHours();
+                var min = time.getMinutes();
+                var sec = time.getSeconds();
+                var ms = time.getMilliseconds();
+                
+                 if (hrs > 12) {
+                     hrs = hrs - 12;
+                 }
+                if (hrs == 0) {
+                    hrs = 12;
+                }
+                
+                document.getElementById('clock').innerHTML = hrs + ':' + min + ':' + sec + ':' + ms;
+            }
+            </script>
+            
+            
+        </body>
+    </html>

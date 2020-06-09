@@ -1,0 +1,17 @@
+{
+  "name": "digital-clock",
+  "version": "1.0.0",
+  "description": "This is a Clock Desktop App",
+  "main": "index.js",
+  "dependencies": {
+    "asar": "^3.0.3",
+    "electron": "^9.0.1",
+    "electron-packager": "^14.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Techy-Hunt",
+  "license": "MIT"
+}
